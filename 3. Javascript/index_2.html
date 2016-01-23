@@ -1,0 +1,42 @@
+    
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css"></style>
+</head>
+<body>
+    
+    <p>How many fingers am I holding up?</p>
+    
+    <input type="number" id="value" max="5" min="0"/>
+    
+    <button id="done">Submit</button>
+    
+    <script type="text/javascript">
+        
+        var x=Math.random();
+        
+        x = x * 6;
+        
+        x = Math.floor(x);
+                
+        document.getElementById("done").onclick = function() {
+            
+            if (document.getElementById("value").value == x) {
+                alert("Good guess.");
+            } else {
+                alert ("Try again.");
+            }
+            
+        }
+        
+    </script>
+
+    
+</body>
+</html>

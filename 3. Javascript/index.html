@@ -1,0 +1,57 @@
+    
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css"></style>
+
+</head>
+<body>
+        
+   <button id="textChanger">Change first div</button>
+    
+    <div id="firstdiv">Some Text</div>
+    
+    <button id="textAppender">Append some text</button>
+    
+    <div id="seconddiv">JavaScript is ...</div>
+
+    <button id="textCreator">Create some text</button>
+    
+    <div id="thirddiv"></div>
+        
+    <script type="text/javascript">
+        
+        document.getElementById("textChanger").onclick=function() {
+            
+            document.getElementById("firstdiv").innerHTML="This is awesome";
+            
+        }
+        
+        document.getElementById("textAppender").onclick=function() {
+            
+            document.getElementById("seconddiv").innerHTML= document.getElementById("seconddiv").innerHTML+" great!";
+            
+        }
+        
+        document.getElementById("textCreator").onclick=function() {
+            
+            document.getElementById("thirddiv").innerHTML="<ul><li>Cat</li><li>Dog</li></ul>";
+            
+        }
+        
+        // This is a comment
+        
+        /*
+        This is a multi line comment
+        
+        */
+    </script>
+
+
+</body>
+</html>
