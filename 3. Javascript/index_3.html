@@ -11,40 +11,22 @@
 </head>
 <body>
     
-    <p>How many fingers am I holding up? ( 1 - 5 )</p>
+    <p id="para">How many fingers am I holding up? ( 1 - 5 )</p>
     
     <input id="myNumber" type="number" />
     
     <button id="guess">Guess</button>
     
     <script type="text/javascript">
-        
-        document.getElementById("guess").onclick = function() {
-            
-            var i = document.getElementById("myNumber").value;
-            
-            var j = Math.floor(Math.random() * 6);
-            
-            var k = 1;
-            
-            if (i==j) {
-                alert("I got it in "+k+" guess. The number is "+j);
-            }
-            
-            while (i!=j) {
-                j = Math.floor(Math.random() * 6);
-                k++;
-                if (k==20) {
-                    break;
-                }
-            }
-            
-            if (k!=1) {
-                alert("I got it in "+k+" guesses. The number is "+j);
-            }
-            
+
+        function adding(a, b) {
+
+            return(a+b);
+
         }
-        
+
+        document.getElementById("para").innerHTML=adding(3, 4);
+
     </script>
 
     
