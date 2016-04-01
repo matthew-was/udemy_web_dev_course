@@ -63,10 +63,9 @@ $(function () {
         makeTabs();
     });
     
-    $("#runButton").click( function () {
-        var htmlStuff = $("#htmlCode").val();
-        var cssStuff = "<style>"+$("#cssCode").val()+"</style>";
-        $("iframe").contents().find("html").html(cssStuff+htmlStuff);
+    $("#runButton").click(function () {
+        var htmlStuff = $("#htmlCode").val(), cssStuff = "<style>" + $("#cssCode").val() + "</style>";
+        $("iframe").contents().find("html").html(cssStuff + htmlStuff);
     });
 
 });
